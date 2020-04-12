@@ -36,3 +36,11 @@ const factorial = (num) => {
 };
 
 console.log(factorial(5));
+
+//factorial by recursion
+const recursionFactorial = (num) => {
+  if (num === 1) return 1;
+  return num * recursionFactorial(num - 1);
+};
+console.log("shodipo");
+console.log(recursionFactorial(5));
