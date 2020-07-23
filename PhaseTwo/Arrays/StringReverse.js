@@ -1,6 +1,8 @@
 //Create a function that reverses a string
 
 function reverse(string) {
+  //check inputs
+
   //initialize array
   const arr = []
   const revArr = []
@@ -14,7 +16,7 @@ function reverse(string) {
   }
 
   //reverse the array
-  for (let j = arr.length - 1; j >= 0; j--) {
+  for (let j = length - 1; j >= 0; j--) {
     revArr.push(arr[j])
   }
 
@@ -22,4 +24,10 @@ function reverse(string) {
   return revArr.join("")
 }
 
+//Alitre
+function reverse2(string) {
+  return string.split("").reverse().join("")
+}
+
 console.log(reverse("ajibola is awesome"))
+console.log(reverse2("ajibola is awesome"))
