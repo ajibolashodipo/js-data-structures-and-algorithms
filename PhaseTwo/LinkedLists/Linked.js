@@ -57,28 +57,7 @@ class LinkedList {
     this.length++
     return this
   }
-
-  // insert(index, value) {
-  //   let count = 0
-  //   let currentNode = this.head
-
-  //   const newNode = {
-  //     value: value,
-  //     next: null
-  //   }
-
-  //   while (currentNode !== null) {
-  //     if (count === index) {
-  //       currentNode = newNode
-  //       newNode.next = currentNode.next
-
-  //       this.length++
-  //       return this
-  //     }
-  //     count++
-  //     currentNode = currentNode.next
-  //   }
-  // }
+ 
 
   insert(index, value) {
     //Check for proper parameters;
@@ -137,5 +116,4 @@ console.log(myLinkedList.prepend(13))
 console.log(myLinkedList.prepend(14))
 console.log(myLinkedList.prepend(19))
 console.log(myLinkedList.remove(3))
-// console.log(myLinkedList.insert(1, 34))
-// console.log(myLinkedList.printList())
+
