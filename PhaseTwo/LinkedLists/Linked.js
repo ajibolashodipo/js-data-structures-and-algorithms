@@ -57,7 +57,6 @@ class LinkedList {
     this.length++
     return this
   }
- 
 
   insert(index, value) {
     //Check for proper parameters;
@@ -98,6 +97,26 @@ class LinkedList {
     return currentNode
   }
 
+  reverse() {
+    if (!this.head.next) {
+      return this.head
+    }
+    let first = this.head
+    this.tail = this.head
+    let second = first.next
+
+    while (second) {
+      const temp = second.next
+      second.next = first
+      first = second
+      second = temp
+    }
+
+    this.head.next = null
+    this.head = first
+    return this.printList()
+  }
+
   printList() {
     const array = []
     let currentNode = this.head
@@ -116,4 +135,3 @@ console.log(myLinkedList.prepend(13))
 console.log(myLinkedList.prepend(14))
 console.log(myLinkedList.prepend(19))
 console.log(myLinkedList.remove(3))
-
