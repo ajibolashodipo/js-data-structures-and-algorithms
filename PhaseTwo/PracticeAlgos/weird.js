@@ -79,30 +79,30 @@ function doesCircleExists(cmds)
     
     
     // method 3
-            //   if(cmds[i]==="L" && d==="N"){
-            //     d="W"
-            //   }
-            //    if(cmds[i]==="L" && d==="W"){
-            //     d="S"
-            //   }
-            //    if(cmds[i]==="L" && d==="E"){
-            //     d="N"
-            //   }
-            //    if(cmds[i]==="L" && d==="S"){
-            //     d="E"
-            //   }
-            //     if(cmds[i]==="R" && d==="N"){
-            //     d="E"
-            //   }
-            //    if(cmds[i]==="R" && d==="W"){
-            //     d="N"
-            //   }
-            //    if(cmds[i]==="R" && d==="E"){
-            //     d="S"
-            //   }
-            //    if(cmds[i]==="R" && d==="S"){
-            //     d="W"
-            //   }
+              if(cmds[i]==="L" && d==="N"){
+                d="W"
+              }
+               if(cmds[i]==="L" && d==="W"){
+                d="S"
+              }
+               if(cmds[i]==="L" && d==="E"){
+                d="N"
+              }
+               if(cmds[i]==="L" && d==="S"){
+                d="E"
+              }
+                if(cmds[i]==="R" && d==="N"){
+                d="E"
+              }
+               if(cmds[i]==="R" && d==="W"){
+                d="N"
+              }
+               if(cmds[i]==="R" && d==="E"){
+                d="S"
+              }
+               if(cmds[i]==="R" && d==="S"){
+                d="W"
+              }
     
     
     
