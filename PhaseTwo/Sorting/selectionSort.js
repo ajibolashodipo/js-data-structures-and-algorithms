@@ -7,6 +7,8 @@ function selectionSort(array) {
     //initialize smallest elemnt as first element
     let min = array[i]
     //j= i+1 as opposed to j=i cos it is redundant to compare an element with itself
+
+    //for loop is used to get the minumum element in the array
     for (let j = i+1; j < array.length; j++) {
       //swapping condition
       if (min > array[j]) {
