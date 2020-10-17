@@ -11,11 +11,9 @@ function mergeSortedArrays(arr1, arr2) {
     console.log(i, j)
     if (arr2[j] === undefined || arr1[i] <= arr2[j]) {
       merged.push(arr1[i])
-      console.log(arr1[i])
       i++
     } else {
       merged.push(arr2[j])
-      console.log(arr2[j])
       j++
     }
   }
