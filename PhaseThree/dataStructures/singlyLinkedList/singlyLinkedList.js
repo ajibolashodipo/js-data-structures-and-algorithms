@@ -163,8 +163,34 @@ class SinglyLinkedList {
     return this
   }
 
-  reverse(){
-    
+  print() {
+    const arr = []
+    let current = this.head
+    while (current) {
+      arr.push(current.val)
+      current = current.next
+    }
+    console.log(arr)
+  }
+
+  reverse() {
+    //swap head and tail
+    let node = this.head
+    this.head = this.tail
+    this.tail = node
+    let next
+    let prev = null
+
+    for (let i = 0; i < this.length; i++) {
+      //tracks the regular flow. next variable
+      next = node.next
+      //assigns next value of current node to previous value
+      node.next = prev
+      //move prev one step
+      prev = node
+      //move current node one step
+      node = next
+    }
   }
 }
 
@@ -172,15 +198,17 @@ let list = new SinglyLinkedList()
 list.push("HELLO")
 list.push("GOODBYE")
 list.push("GOOD")
-// list.push("GO")
+list.push("GO")
 // list.pop()
 // list.pop()
 // list.pop()
 // list.shift()
 //list.unshift("Ajibola")
 // list.get(2)
-// list.set(1, "Aliyah")
-// list.insert(3, "Ali")
+list.set(1, "Aliyah")
+list.insert(3, "Ali")
 // list.remove(1)
-
+list.print()
+list.reverse()
+list.print( )
 // console.log(list)
