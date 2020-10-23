@@ -1,4 +1,4 @@
-//contains an outer function that is not recursive that calls an inner function that is recursive
+//contains an outer function that is not recursive that calls an inner function that is recursive 
 
 
 function collectOddValues(arr) {
