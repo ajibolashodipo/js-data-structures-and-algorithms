@@ -3,13 +3,10 @@ function reverse(str) {
   return reverse(str.slice(1)) + str[0]
 }
 
-console.log(reverse("aj"))
-
-
+console.log(reverse("ajibola"))
 
 //very inefficient solution
-
-// function reverse(str) {
+// function reverse2(str) {
 //   const arr = str.split("")
 //   const dup = [...arr]
 
@@ -26,3 +23,5 @@ console.log(reverse("aj"))
 //   let fi = dup[dup.length - 1] + final
 //   return fi
 // }
+
+// console.log(reverse2("ajibola"))
