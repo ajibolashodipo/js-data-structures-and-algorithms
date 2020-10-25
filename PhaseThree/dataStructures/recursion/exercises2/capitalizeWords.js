@@ -1,26 +1,17 @@
-function capitalizeWords(arr) {
-  const capArr = []
+// function capitalizeWords(arr) {
+//   const capArr = []
 
-  function helper(arr) {
-    //base case
-    if (arr.length == 0) {
-      return
-    }
-    capArr.push(arr[0].toUpperCase())
-    helper(arr.slice(1))
-  }
-  helper(arr)
-  return capArr
-}
-
-let words = ["i", "am", "learning", "recursion"]
-console.log(capitalizeWords(words)) // ['I', 'AM', 'LEARNING', 'RECURSION']
-
-function capitalizeWords2(arr){
-    const capArr=[]
-
-}
-
+//   function helper(arr) {
+//     //base case
+//     if (arr.length == 0) {
+//       return
+//     }
+//     capArr.push(arr[0].toUpperCase())
+//     helper(arr.slice(1))
+//   }
+//   helper(arr)
+//   return capArr
+// }
 
 //more complex solution (without helper method)
 function capitalizeWords(array) {
@@ -31,3 +22,6 @@ function capitalizeWords(array) {
   res.push(array.slice(array.length - 1)[0].toUpperCase())
   return res
 }
+
+let words = ["i", "am", "learning", "recursion"]
+console.log(capitalizeWords(words)) // ['I', 'AM', 'LEARNING', 'RECURSION']
