@@ -2,21 +2,14 @@ function nestedEvenSum(obj) {
   let sum = 0
 
   function helper(obj) {
-      //get keys into an array
-    const myKeys = Object.keys(obj)
-   
     //loop through object keys
-    for (let i = 0; i < myKeys.length; i++) {
-        //get individual keys
-      let element = myKeys[i]
+    for (let element in obj) {
       //get sub-objects if any
       let subObj = obj[element]
       //check if subobject is truly an object
-      if (isObject(subObj)) {
-          //recurse
-        helper(subObj)
-      } else {
-          //check for even value
+      if (isObject(subObj)) helper(subObj)
+      else {
+        //check for even value
         if (obj[element] % 2 == 0) {
           sum += obj[element]
         }
@@ -24,6 +17,17 @@ function nestedEvenSum(obj) {
     }
   }
   helper(obj)
+  return sum
+}
+
+function nestedEvenSum(obj, sum = 0) {
+  for (var key in obj) {
+    if (typeof obj[key] === "object") {
+      sum += nestedEvenSum(obj[key])
+    } else if (typeof obj[key] === "number" && obj[key] % 2 === 0) {
+      sum += obj[key]
+    }
+  }
   return sum
 }
 
