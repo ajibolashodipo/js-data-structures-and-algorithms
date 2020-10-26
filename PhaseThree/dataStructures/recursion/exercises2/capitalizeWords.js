@@ -19,6 +19,7 @@ function capitalizeWords(array) {
     return [array[0].toUpperCase()]
   }
   let res = capitalizeWords(array.slice(0, -1))
+  console.log(res)
   res.push(array.slice(array.length - 1)[0].toUpperCase())
   return res
 }
