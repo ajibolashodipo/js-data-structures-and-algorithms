@@ -30,6 +30,7 @@ function radixSort(nums) {
 
 
 /////////////////////////////////////////////////////////
+//my initial implementation of getDigit
 function getDigit(num, place) {
   for (let i = 0; i <= place; i++) {
     let tem = num % 10
@@ -38,8 +39,7 @@ function getDigit(num, place) {
     if (num == 0) return 0
   }
 }
-
-console.log(getDigit(12345, 7))
+//much optimized version
 
 function getDigit(num, place) {
   return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10
