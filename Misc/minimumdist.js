@@ -7,7 +7,7 @@ function minimumDistances(a) {
       obj[a[i]] = [i]
     }
   }
-
+  console.log(obj)
   const val = Object.values(obj)
   let filt = val.filter((el) => el.length > 1)
   if (!filt.length) return -1
@@ -17,6 +17,7 @@ function minimumDistances(a) {
     fin.push(Math.abs(diff))
   })
   let min = Math.min(...fin)
+
   return min
 }
 
